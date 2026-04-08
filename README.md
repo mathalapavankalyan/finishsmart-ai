@@ -118,3 +118,13 @@ The solution consists of the following layers:
 ---
 
 ## Project Structure
+
+
+                finishsmart/
+├── agent.py # Main agent orchestration and FastAPI server
+├── requirements.txt # Python dependencies
+├── init.py
+├── pycache/
+├── diagrams/ # Architecture, wireframes, and process diagrams
+├── test_db.py # Script to test database connection
+└── README.md
