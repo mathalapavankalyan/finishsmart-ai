@@ -9,11 +9,11 @@ from fastapi.concurrency import run_in_threadpool
 # -----------------------------
 # DATABASE CONNECTION
 # -----------------------------
-DB_HOST = os.getenv("DB_HOST", "10.10.0.2")
+DB_HOST = os.getenv("DB_HOST", "YOUR-HOST-IP")
 DB_PORT = int(os.getenv("DB_PORT", 5432))
 DB_NAME = os.getenv("DB_NAME", "postgres")
 DB_USER = os.getenv("DB_USER", "postgres")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "root@123")  # Use secret in production
+DB_PASSWORD = os.getenv("DB_PASSWORD", "PASSWORD")  # Use secret in production
 
 def get_db_connection():
     try:
